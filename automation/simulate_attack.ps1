@@ -1,4 +1,3 @@
-# Script de Simulacion de Adversarios - Dia 19
 # Simula Ransomware e Intento de Abuso de Credenciales
 
 $TargetDirectory = ".\evidence\mock_shares"
