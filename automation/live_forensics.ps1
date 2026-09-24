@@ -1,4 +1,3 @@
-# Script de Respuesta a Incidentes y Analisis Forense Digital - Dia 19
 # Recoleccion Volatil y Preservacion con Cadena de Custodia Criptografica
 
 $EvidenceDir = ".\evidence"
@@ -11,7 +10,7 @@ Write-Output "Iniciando triaje forense en vivo y recoleccion de evidencias..."
 $ActiveConnections = Get-NetTCPConnection | Select-Object LocalAddress, LocalPort, RemoteAddress, RemotePort, State | ConvertTo-Json
 $RunningProcesses = Get-Process | Select-Object Id, ProcessName, CPU, Path | ConvertTo-Json
 
-# 2. Preservacion de Evidencia Digital mediante Hashing (Cadena de Custodia)
+# 2. Preservacion de Evidencia Digital mediante Hashing 
 $PreservedFiles = @()
 $LockedFiles = Get-ChildItem -Path "$EvidenceDir\mock_shares" -Filter *.locked -ErrorAction SilentlyContinue
 
