@@ -1,0 +1,4 @@
+evidence/mock_shares/
+*.locked
+logs/*.log
+reports/forensic_triage_report.md
